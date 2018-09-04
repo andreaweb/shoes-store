@@ -1,3 +1,21 @@
+:root{
+  --pastel-orange: #DE8F75;
+  --light-blue: #5F75AA;
+  --gray: #AEB6C1;
+  --pastel-yellow: #E0DA9C;
+  --bluish-gray: #A5C3C0;
+  --marine-blue: #2A5A75;
+  --black: #202020;
+  --forest-green: #32917B;
+  --red: #E35442;
+  --off-white: #F2F2F2;
+  --grayish-white: #EBEBEB;
+  --lighter-gray: #E3E3E3;
+  --light-gray: #CCCCCC;
+  --medium-gray: #ADADAD;
+  --dark-gray: #7F7F7F;
+  --darker-gray: #686868
+}
 .App {
   text-align: center;
 }
