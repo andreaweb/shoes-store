@@ -1,5 +1,17 @@
 import React, { Component } from 'react';
 import truck from './svg/truck.svg';
+import logo from './svg/logo.svg';
+import search from './svg/search.svg';
+import bag from './svg/bag.svg';
+import play from './svg/play.svg';
+import plus from './svg/circle-plus.svg';
+import caretUp from './svg/caret-up.svg';
+import caretDown from './svg/caret-down.svg';
+import caretRight from './svg/caret-right.svg';
+import caretLeft from './svg/caret-left.svg';
+import facebook from './svg/facebook.svg';
+import instagram from './svg/instagram.svg';
+import pinterest from './svg/pinterest.svg';
 import './App.css';
 
 class App extends Component {
@@ -8,7 +20,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <section>
-            Logo
+            <img src={logo} />
           </section>
 
           <nav>
@@ -22,8 +34,10 @@ class App extends Component {
               <li>OFF</li>
             </ul>
             <section>
+              <img src={search} />
               <input placeholder="Busca" />
               <div>
+                <img src={bag} />
                 0
               </div>
             </section>
@@ -39,6 +53,9 @@ class App extends Component {
 
           <section className="main-product">
             <div className="main-product__thumbnails">
+              <img src={play} />
+              <img src={caretUp} />
+              <img src={caretDown} />
             </div>
             <div className="main-product__picture">
             </div>
@@ -88,7 +105,7 @@ class App extends Component {
             <h3>QUEM VIU VIU TAMBÉM</h3>
             <ul>
               <li>
-                <img className="suggested-products__add" />
+                <img src={plus} className="suggested-products__add" />
                 <img className="suggested-products__image" />
                 <section className="suggested-products__info">
                   <span>R$204,90</span>
@@ -122,9 +139,9 @@ class App extends Component {
 
           <section className="links">
             <ul className="links__social-media">
-              <li>Facebook</li>
-              <li>Instagram</li>
-              <li>Pinterest</li>
+              <li><img src={facebook} /></li>
+              <li><img src={instagram} /></li>
+              <li><img src={pinterest} /></li>
             </ul>
 
             <ul className="links__group">
@@ -154,7 +171,7 @@ class App extends Component {
             <span>Av.das Américas, 500 - bloco 20, loja 126 - Barra da Tijuca - Rio de Janeiro - RJ - CEP: 22640-100</span>
             <span>CNPJ: 05.292.288/0002-10 - I.E: 86.732.548 - E-mail: ecommerce@viamia.com.br</span>
 
-            Logo
+            <img src={logo} />
           </section>
         </footer>
       </div>
