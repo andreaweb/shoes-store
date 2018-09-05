@@ -270,17 +270,28 @@ li.breadcrumb__current-page::after{
 .links{
   display: flex;
 }
-.links__social-media{
-  list-style-type: none;
+.external-links{
   padding-left: 70px;
+  min-width: 195px;
+}
+.links__social-media{
+  list-style-type: none; 
   display: flex;
+  padding-left: 0;
 }
 .links__social-media li{
   margin-right: 30px;
 }
+.links__certifications{
+  margin-top: 51px;
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+  justify-content: space-between;
+}
 .links__group{
   line-height: 42px;
-  list-style-type: none
+  list-style-type: none;
 }
 .links__group--title{
   font-family: var(--gotham-bold);

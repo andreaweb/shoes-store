@@ -14,6 +14,8 @@ import caretLeft from './svg/caret-left.svg';
 import facebook from './svg/facebook.svg';
 import instagram from './svg/instagram.svg';
 import pinterest from './svg/pinterest.svg';
+import certified from './svg/certified.svg';
+import ebit from './svg/ebit.svg';
 import './App.css';
 
 class App extends Component {
@@ -203,11 +205,18 @@ class App extends Component {
 
         <footer className="footer">
           <section className="links">
-            <ul className="links__social-media">
-              <li><img src={facebook} /></li>
-              <li><img src={instagram} /></li>
-              <li><img src={pinterest} /></li>
-            </ul>
+            <div className="external-links">
+              <ul className="links__social-media">
+                <li><img src={facebook} /></li>
+                <li><img src={instagram} /></li>
+                <li><img src={pinterest} /></li>
+              </ul>
+
+              <ul className="links__certifications">
+                <li><img src={certified} /></li>
+                <li><img src={ebit} /></li>
+              </ul>
+            </div>
 
             <ul className="links__group">
               <li className="links__group--title">INSTITUCIONAL</li>
