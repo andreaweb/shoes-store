@@ -8,16 +8,20 @@ import Thumbnails from './Thumbnails.js'
 import ProductInfo from './ProductInfo.js'
 
 class MainProduct extends React.Component {
+  constructor(props){
+    super(props)
+  }
   render(){
     return (
       <section className="main-product" style={{backgroundImage: `url(${lineBackground})`}}>
-            <Thumbnails />
+            <Thumbnails product={this.props.product} />
 
             <div className="main-product__picture">
-              <img src="./images/sandalia.jpg" />
+              <img src={this.props.product.img} />
             </div>
 
             <ProductInfo 
+              product={this.props.product}
               updateShoppingBag={this.props.updateBag}
             />
       </section>

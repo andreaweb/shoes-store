@@ -38,14 +38,14 @@ class ProductInfo extends React.Component {
     return (
       <div className="main-product__info">
         <section className="main-product__info__title">
-          <h2 className="product-title">RASTEIRA TIRA DEDO</h2>
+          <h2 className="product-title">{this.props.product.name}</h2>
           <span>RT 0568 | 03.07.0653</span>
         </section>
 
         <section className="main-product__info__price">
-          <span className="off">R$69,00</span>
+          <span className="off">{this.props.product.oldPrice}</span>
           <span className="red"> |</span>
-          <span className="new-price">R$55,20</span>
+          <span className="new-price">{this.props.product.price}</span>
           <span className="parcelas">Ou 6x de R$9,20</span>
         </section>
 
@@ -74,7 +74,11 @@ class ProductInfo extends React.Component {
           
         </section>
 
-        <section className="main-product__info__size">
+        <section 
+          className={
+            this.props.product.type == "shoes" ? "main-product__info__size" : "display-none"
+          }
+        >
           <div className="margin-bottom margin-top">
             <span>Tamanho: 
               <span className="light-blue"> ({this.state.selectedSize})</span>

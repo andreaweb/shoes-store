@@ -16,7 +16,37 @@ class App extends Component {
     super(props);
     this.state = {
       shoppingBag: 0,
-      isModalOpen: false
+      isModalOpen: false,
+      products: [
+        { name: "BOLSA ALCINHA",
+          type: "accessory",
+          img: "./images/bolsa.jpg",
+          oldPrice: "R$ 139,99",
+          price: "R$ 99,99"
+        },
+        {
+          name: "RASTEIRINHA BRILHOSA",
+          type: "shoes",
+          img: "./images/rasteirinha.jpg",
+          oldPrice: "R$ 39,99",
+          price: "R$ 19,99"
+        },
+        {
+          name: "SANDÁLIA TIRA DEDO",
+          type: "shoes",
+          img: "./images/sandalia.jpg",
+          oldPrice: "R$ 69,99",
+          price: "R$ 55,20"
+        },
+        {
+          name: "CARTEIRA DE COURO",
+          type: "accessory",
+          img: "./images/carteira.jpg",
+          oldPrice: "R$ 129,99",
+          price: "R$ 89,99"
+        }
+      ],
+      activeProduct: 2
     }
   }
   updateShoppingBag = () => {
@@ -25,6 +55,9 @@ class App extends Component {
   }
   closeModal = () => {
     this.setState({isModalOpen: false})
+  }
+  changeActiveProduct = (key) => {
+    this.setState({activeProduct: key})
   }
   render() {
     return (
@@ -39,9 +72,15 @@ class App extends Component {
         <main>
           <Breadcrumb />
 
-          <MainProduct updateBag={this.updateShoppingBag} />
+          <MainProduct 
+            product={this.state.products[this.state.activeProduct]} 
+            updateBag={this.updateShoppingBag} 
+          />
 
-          <SuggestedProducts />
+          <SuggestedProducts 
+            {...this.state} 
+            changeActiveProduct={(key) => this.changeActiveProduct(key)} 
+          />
         </main>
 
         <Modal {...this.state} closeModal={this.closeModal} />

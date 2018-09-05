@@ -46,7 +46,7 @@ class Thumbnails extends React.Component {
         {[...Array(this.state.picsLength)].map(
           (e,key) => 
           <img 
-            src="./images/sandalia.jpg"
+            src={this.props.product.img}
             key={key}
             onClick={() => this.selectThumbnail(key)}
             className={key == this.state.selectedThumbnail 
