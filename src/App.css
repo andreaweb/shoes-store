@@ -201,6 +201,7 @@ li.breadcrumb__current-page::after{
   background: var(--lighter-gray);
   color: var(--light-blue);
   font-family: var(--gotham);
+  cursor: pointer;
 }
 .size-circle--active{
   background: var(--pastel-yellow);
