@@ -7,7 +7,7 @@ class Navigation extends React.Component {
     return (
       <nav className="main-menu">
         <section className="main-menu__login">
-          Entrar | Cadastrar-se
+          <span>Entrar</span><span> | </span><span className="mq-display-block">Cadastrar-se</span>
         </section>
         <ul className="main-menu__navigation">
           <li>SAPATOS</li>

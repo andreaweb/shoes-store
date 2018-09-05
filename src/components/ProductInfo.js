@@ -28,7 +28,7 @@ class ProductInfo extends React.Component {
     }
 
   }
-  selectedSize = (size) => {
+  selectSize = (size) => {
     this.setState({selectedSize: size})
   }
   selectColor = (key) => {
