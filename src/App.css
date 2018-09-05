@@ -108,11 +108,18 @@ li.breadcrumb__current-page::after{
   flex-direction: column;
   align-items: center
 }
-.main-product__thumbnails__link-up{
+.main-product__thumbnails__button{
+  border: none;
+  background: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+.main-product__thumbnails__button--link-up{
   margin-bottom: 21px;
   margin-top: 70px;
 }
-.main-product__thumbnails__link-down{
+.main-product__thumbnails__button--link-down{
   margin-top: 20px;
 }
 .main-product__thumbnails__video{
@@ -125,6 +132,7 @@ li.breadcrumb__current-page::after{
   width: 75px;
   margin-top: 10px;
   opacity: .7;
+  cursor: pointer;
 }
 .main-product__thumbnails__thumbnail--active{
   opacity: 1;
