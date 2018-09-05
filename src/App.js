@@ -11,20 +11,30 @@ import Footer from './components/Footer.js'
 import './App.css';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      shoppingBag: 0
+    }
+  }
+  updateShoppingBag = () => {
+    let increment = this.state.shoppingBag+1
+    this.setState({shoppingBag: increment })
+  }
   render() {
     return (
       <div className="App">
         <header className="header">
           <LogoContainer />
 
-          <Navigation />
+          <Navigation bag={this.state.shoppingBag} />
 
         </header>
 
         <main>
           <Breadcrumb />
 
-          <MainProduct />
+          <MainProduct updateBag={this.updateShoppingBag} />
 
           <SuggestedProducts />
         </main>
