@@ -224,11 +224,14 @@ li.breadcrumb__current-page::after{
   cursor: pointer;
 }
 .suggested-products{
-  height: 100vh;
+  margin-bottom: 89px;
 }
 .suggested-products ul{
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 1220px;
+  margin: 0 auto;
 }
 .suggested-product{
   margin-right: 13px;
@@ -407,4 +410,23 @@ li.breadcrumb__current-page::after{
 }
 .light-blue{
   color: var(--light-blue);
+}
+
+@media screen and (max-width: 1280px){
+  /*Footer*/
+  .links{
+    display: block
+  }
+  .newsletter{
+    left: 35vw;
+  }
+  .external-links{
+    padding-left: 40px;
+  }
+  .links__certifications{
+    justify-content: unset
+  }
+  .links__certifications li:last-child{
+    margin-left: 12px;
+  }
 }
