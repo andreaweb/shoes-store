@@ -63,7 +63,7 @@ class ProductInfo extends React.Component {
               <span 
                 key={key}
                 onClick={() => this.selectColor(key)}
-                className={this.state.selectedColor == key 
+                className={this.state.selectedColor === key 
                             ? color.colorClass + " color-circle color-circle--active"
                             : color.colorClass + " color-circle"
                           }
@@ -76,7 +76,7 @@ class ProductInfo extends React.Component {
 
         <section 
           className={
-            this.props.product.type == "shoes" ? "main-product__info__size" : "display-none"
+            this.props.product.type === "shoes" ? "main-product__info__size" : "display-none"
           }
         >
           <div className="margin-bottom margin-top">
@@ -90,7 +90,7 @@ class ProductInfo extends React.Component {
                 <span 
                   key={key} 
                   onClick={() => this.selectSize(size)}
-                  className={this.state.selectedSize == size
+                  className={this.state.selectedSize === size
                     ? "size-circle size-circle--active"
                     : "size-circle"
                   }

@@ -13,14 +13,14 @@ class Footer extends React.Component {
           <section className="links">
             <div className="external-links">
               <ul className="links__social-media">
-                <li><img src={facebook} /></li>
-                <li><img src={instagram} /></li>
-                <li><img src={pinterest} /></li>
+                <li><img src={facebook} alt="Facebook" /></li>
+                <li><img src={instagram} alt="Instagram" /></li>
+                <li><img src={pinterest} alt="Pinterest" /></li>
               </ul>
 
               <ul className="links__certifications">
-                <li><img src={certified} /></li>
-                <li><img src={ebit} /></li>
+                <li><img src={certified} alt="Security Certification" /></li>
+                <li><img src={ebit} alt="Prize for best store" /></li>
               </ul>
             </div>
 
@@ -62,7 +62,7 @@ class Footer extends React.Component {
             <span>CNPJ: 05.292.288/0002-10 - I.E: 86.732.548 - E-mail: ecommerce@viamia.com.br</span>
             </span>
 
-            <img src={whiteLogo} className="white" />
+            <img src={whiteLogo} className="white" alt="Logo" />
           </section>
         </footer>
       )

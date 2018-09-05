@@ -257,6 +257,7 @@ li.breadcrumb__current-page::after{
   border-radius: 50%;
 }
 .suggested-product__image{
+  cursor: pointer;
   height: 374px;
   width: 290px;
 }
@@ -278,6 +279,7 @@ li.breadcrumb__current-page::after{
   border: 2px solid var(--light-blue);
   padding: 15px 17px;
   border-radius: 50%;
+  cursor: pointer;
 }
 /*footer*/
 .footer{

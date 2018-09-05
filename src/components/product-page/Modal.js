@@ -9,11 +9,16 @@ class Modal extends React.Component {
     		onClick={this.props.closeModal}
     	>
 		  <section className="modal-content">
-		    <img src={close} alt="Close button" 
+		    <img src={close} 
+		    	alt="Close button" 
 			    className="modal__close" 
 			    onClick={this.props.closeModal} 
 		    />
-		    <img src={this.props.products[this.props.activeProduct].img} className="modal__image" alt="Produto" />
+		    <img 
+		    	src={this.props.products[this.props.activeProduct].img} 
+		    	className="modal__image" 
+		    	alt="" 
+		    />
 		    <h3 className="modal__title">PRODUTO ADICIONADO COM SUCESSO!</h3>
 		    <button className="button modal__button">FINALIZAR COMPRA</button>
 		    <span className="modal__link">Continuar Comprando</span>

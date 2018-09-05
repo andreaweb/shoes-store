@@ -33,14 +33,14 @@ class Thumbnails extends React.Component {
       <div className="main-product__thumbnails">
         <section className="main-product__thumbnails__video">
           <span>Vídeo</span>
-          <img src={play} />
+          <img src={play} alt="Play Video" />
         </section>
 
         <button 
           onClick={(val) => this.moveSelectedThumbnail(-1)}
           className="main-product__thumbnails__button main-product__thumbnails__button--link-up"
         >
-          <img src={caretUp} />
+          <img src={caretUp} alt="Show Previous" />
         </button>
 
         {[...Array(this.state.picsLength)].map(
@@ -48,8 +48,9 @@ class Thumbnails extends React.Component {
           <img 
             src={this.props.product.img}
             key={key}
+            alt={this.props.product.name}
             onClick={() => this.selectThumbnail(key)}
-            className={key == this.state.selectedThumbnail 
+            className={key === this.state.selectedThumbnail 
               ? "main-product__thumbnails__thumbnail main-product__thumbnails__thumbnail--active"
               : "main-product__thumbnails__thumbnail"
             } 
@@ -60,7 +61,7 @@ class Thumbnails extends React.Component {
           onClick={(val) => this.moveSelectedThumbnail(1)}
           className="main-product__thumbnails__button main-product__thumbnails__button--link-down"
         >
-          <img src={caretDown} />
+          <img src={caretDown} alt="Show Next" />
         </button>
       </div>
     )

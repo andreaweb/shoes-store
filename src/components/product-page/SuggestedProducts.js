@@ -3,9 +3,6 @@ import SuggestedProduct from './SuggestedProduct.js';
 import Pagination from '../general/Pagination.js';
 
 class SuggestedProducts extends React.Component {
-	constructor(props){
-		super(props);
-	}
   render(){
   	return (
   		<section className="suggested-products">
@@ -14,7 +11,9 @@ class SuggestedProducts extends React.Component {
              {  
              	this.props.products.map(
              		(product,key) => 
-             			<SuggestedProduct img={product.img} 
+             			<SuggestedProduct 
+             				img={product.img} 
+             				name={product.name}
              				key={key}
              				price={product.price}
              				updateBag={this.updateShoppingBag} 

@@ -5,7 +5,7 @@ class LogoContainer extends React.Component {
   render(){
   	return (
   		<section className="logo-container">
-            <img src={logo} />
+            <img src={logo} alt="logo" />
         </section>
         )
     }

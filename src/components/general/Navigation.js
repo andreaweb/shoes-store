@@ -16,10 +16,10 @@ class Navigation extends React.Component {
           <li>OFF</li>
         </ul>
         <section className="main-menu__search">
-          <img className="main-menu__search__input-icon" src={search} />
+          <img className="main-menu__search__input-icon" src={search} alt="Search" />
           <input className="main-menu__search__input-field" placeholder="Busca" />
           <div>
-            <img src={bag} />
+            <img src={bag} alt="Shopping Cart" />
             {this.props.bag}
           </div>
         </section>

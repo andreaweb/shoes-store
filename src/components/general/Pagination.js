@@ -29,12 +29,14 @@ class Pagination extends React.Component {
 				src={caretLeft} 
 				onClick={(val) => this.updatesPage(-1)} 
 				className="pagination__caret" 
+				alt="Previous Page"
 	          />
 	          <span>{this.state.currentPage} de {this.state.totalPages} </span>
 	          <img 
 				src={caretRight} 
 				onClick={(val) => this.updatesPage(1)} 
-				className="pagination__caret" 
+				className="pagination__caret"
+				alt="Next Page"
 	          />
 	        </div>
     	)

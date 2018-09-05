@@ -6,13 +6,15 @@ class SuggestedProduct extends React.Component {
     return (
       <li className="suggested-product">
           <img 
-            src={plus} 
+            src={plus}
+            alt="Add to Cart"
             className="suggested-product__add" 
           />
           <img 
             className="suggested-product__image" 
-            src={this.props.img} 
-            onClick={() => this.props.changeActiveProduct(this.props.key)}
+            src={this.props.img}
+            alt={this.props.name}
+            onClick={() => this.props.changeActiveProduct()}
           />
           <section className="suggested-product__info">
             <span>{this.props.price}</span>
