@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 /* components */
-import LogoContainer from './components/LogoContainer.js'
-import Navigation from './components/Navigation.js'
-import Breadcrumb from './components/Breadcrumb.js'
-import MainProduct from './components/MainProduct.js'
-import SuggestedProducts from './components/SuggestedProducts.js'
-import Footer from './components/Footer.js'
-import Modal from './components/Modal.js'
+import LogoContainer from './components/general/LogoContainer.js'
+import Navigation from './components/general/Navigation.js'
+import Breadcrumb from './components/general/Breadcrumb.js'
+import MainProduct from './components/product-page/MainProduct.js'
+import SuggestedProducts from './components/product-page/SuggestedProducts.js'
+import Footer from './components/general/Footer.js'
+import Modal from './components/product-page/Modal.js'
 
 import './App.css';
 

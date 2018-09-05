@@ -1,7 +1,7 @@
 import React from 'react';
 
 /* SVG ICONS */
-import lineBackground from '../svg/background.svg';
+import lineBackground from '../../svg/background.svg';
 
 
 import Thumbnails from './Thumbnails.js'

@@ -1,5 +1,5 @@
 import React from 'react';
-import plus from '../svg/plus.svg';
+import plus from '../../svg/plus.svg';
 
 class SuggestedProduct extends React.Component {
   render(){

@@ -1,6 +1,6 @@
 import React from 'react';
-import caretRight from '../svg/caret-right.svg';
-import caretLeft from '../svg/caret-left.svg';
+import caretRight from '../../svg/caret-right.svg';
+import caretLeft from '../../svg/caret-left.svg';
 
 class Pagination extends React.Component {
 	constructor(props){

@@ -1,6 +1,6 @@
 import React from 'react';
 import SuggestedProduct from './SuggestedProduct.js';
-import Pagination from './Pagination.js';
+import Pagination from '../general/Pagination.js';
 
 class SuggestedProducts extends React.Component {
 	constructor(props){

@@ -1,10 +1,10 @@
 import React from 'react';
-import facebook from '../svg/facebook.svg';
-import instagram from '../svg/instagram.svg';
-import pinterest from '../svg/pinterest.svg';
-import certified from '../svg/certified.svg';
-import ebit from '../svg/ebit.svg';
-import whiteLogo from '../svg/white-logo.svg';
+import facebook from '../../svg/facebook.svg';
+import instagram from '../../svg/instagram.svg';
+import pinterest from '../../svg/pinterest.svg';
+import certified from '../../svg/certified.svg';
+import ebit from '../../svg/ebit.svg';
+import whiteLogo from '../../svg/white-logo.svg';
 
 class Footer extends React.Component {
   render(){

@@ -1,7 +1,7 @@
 import React from 'react';
-import play from '../svg/play.svg';
-import caretUp from '../svg/caret-up.svg';
-import caretDown from '../svg/caret-down.svg';
+import play from '../../svg/play.svg';
+import caretUp from '../../svg/caret-up.svg';
+import caretDown from '../../svg/caret-down.svg';
 
 class Thumbnails extends React.Component {
   constructor(props){

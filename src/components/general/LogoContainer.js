@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../svg/logo.svg';
+import logo from '../../svg/logo.svg';
 
 class LogoContainer extends React.Component {
   render(){

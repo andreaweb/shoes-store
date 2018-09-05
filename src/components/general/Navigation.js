@@ -1,6 +1,6 @@
 import React from 'react';
-import search from '../svg/search.svg';
-import bag from '../svg/bag.svg';
+import search from '../../svg/search.svg';
+import bag from '../../svg/bag.svg';
 
 class Navigation extends React.Component {
   render(){
