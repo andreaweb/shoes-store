@@ -32,11 +32,13 @@
 }
 .App {
   background-color: #fff;
-  height: 150px;
   color: var(--black);
   font-family: var(--open-sans)
 }
-
+.App--modal{
+  height: 100vh;
+  overflow: hidden;
+}
 .logo-container{
   padding: 26px;
   display: flex;
@@ -366,6 +368,47 @@ li.breadcrumb__current-page::after{
   display: block;
 }
 
+/*modal*/
+.modal{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(32, 32, 32, 0.6)
+}
+.modal-content{
+  width: 445px;
+  height: 602px;
+  background: white;
+  padding: 36px 77px;
+  box-sizing: border-box;
+  margin: 62px auto 0;
+}
+.modal__close{
+  margin-left: 300px;
+  cursor: pointer;
+}
+.modal__image{
+  max-width: 100%;
+}
+.modal__title{
+  color: var(--pastel-orange);
+  font-family: var(--gotham-bold);
+  font-size: 22px;
+  margin: 0;
+}
+.modal__button{
+  margin-top: 0;
+}
+.modal__link{
+  cursor: pointer;
+  color: var(--light-gray);
+  text-decoration: underline;
+  display: block;
+  text-align: center;
+  font-family: var(--gotham);
+}
 /*utilities*/
 .link{
   color: var(--pastel-orange);
@@ -375,6 +418,9 @@ li.breadcrumb__current-page::after{
   margin-left: 100px;
 }
 
+.display-none{
+  display: none;
+}
 .margin-bottom{
   margin-bottom: 5px
 }

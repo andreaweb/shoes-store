@@ -17,7 +17,9 @@ class MainProduct extends React.Component {
               <img src="./images/sandalia.jpg" />
             </div>
 
-            <ProductInfo updateShoppingBag={this.props.updateBag} />
+            <ProductInfo 
+              updateShoppingBag={this.props.updateBag}
+            />
       </section>
     )
   }

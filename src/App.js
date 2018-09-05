@@ -7,6 +7,7 @@ import Breadcrumb from './components/Breadcrumb.js'
 import MainProduct from './components/MainProduct.js'
 import SuggestedProducts from './components/SuggestedProducts.js'
 import Footer from './components/Footer.js'
+import Modal from './components/Modal.js'
 
 import './App.css';
 
@@ -14,16 +15,20 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      shoppingBag: 0
+      shoppingBag: 0,
+      isModalOpen: false
     }
   }
   updateShoppingBag = () => {
-    let increment = this.state.shoppingBag+1
-    this.setState({shoppingBag: increment })
+    let increment = this.state.shoppingBag + 1
+    this.setState({shoppingBag: increment, isModalOpen: true })
+  }
+  closeModal = () => {
+    this.setState({isModalOpen: false})
   }
   render() {
     return (
-      <div className="App">
+      <div className={this.state.isModalOpen ? "App App--modal" : "App"}>
         <header className="header">
           <LogoContainer />
 
@@ -39,15 +44,7 @@ class App extends Component {
           <SuggestedProducts />
         </main>
 
-        <div style={{display: 'none'}} className="modal">
-          <section className="modal-content">
-            <img src="" alt="Close button" />
-            <img src="" alt="Produto" />
-            <h3>PRODUTO ADICIONADO COM SUCESSO!</h3>
-            <button>FINALIZAR COMPRA</button>
-            <span>Continuar Comprando</span>
-          </section>
-        </div>
+        <Modal {...this.state} closeModal={this.closeModal} />
 
         <Footer />
       </div>
