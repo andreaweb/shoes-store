@@ -183,11 +183,13 @@ li.breadcrumb__current-page::after{
   border-radius: 50%;
   display: inline-block;
   border: 5px solid white;
+  cursor: pointer;
 }
 .color-circle--small{
   height: 13px;
   width: 13px;
   margin-right: 5px;
+  cursor: default;
 }
 .color-circle--active{
   border-color: var(--pastel-yellow);
