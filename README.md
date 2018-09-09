@@ -1,6 +1,6 @@
-### Shoes Store - Challenge for Original.io
+## Shoes Store - Challenge for Original.io
 
-## Check it out!
+### Check it out!
 https://andreaweb.github.io/shoes-store/
 ![Print](public/images/print.jpg)
 
